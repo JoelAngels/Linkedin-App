@@ -33,10 +33,11 @@
   font-weight: 600;
 }
 
-.feed__input > form > input::placeholder {
-  color: #00000099;
-}
-
 .feed__input > form > button {
   display: none;
+}
+
+.feed__inputOptions {
+  display: flex;
+  justify-content: space-evenly;
 }

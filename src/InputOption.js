@@ -1,10 +1,11 @@
 import React from "react";
-import "./InputOption";
+import "./InputOption.css";
 
-function InputOption() {
+function InputOption({ Icon, title, color }) {
   return (
-    <div className="input">
-      <h1>putIn</h1>
+    <div className="inputOption">
+      <Icon style={{ color: color }} />
+      <h4>{title}</h4>
     </div>
   );
 }
