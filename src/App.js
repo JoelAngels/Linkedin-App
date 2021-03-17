@@ -7,13 +7,9 @@ import Feed from "./Feed";
 function App() {
   return (
     <div className="app">
-      {/* Header */}
       <Header />
-      {/* App Body */}
       <div className="app__body">
-        {/* Sidebar  */}
         <Sidebar />
-        {/* Feed */}
         <Feed />
       </div>
       {/* Widgets */}

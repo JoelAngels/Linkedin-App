@@ -1,5 +1,5 @@
 import CreateIcon from "@material-ui/icons/Create";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Feed.css";
 import InputOption from "./InputOption";
 import ImageIcon from "@material-ui/icons/Image";
@@ -7,13 +7,42 @@ import CalendarViewDayIcon from "@material-ui/icons/CalendarViewDay";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import DateRangeIcon from "@material-ui/icons/DateRange";
 import Post from "./Post";
+import { db } from "./firebase";
+import firebase from "firebase";
 
 function Feed() {
   //react hooks
+  const [input, setInput] = useState("");
   const [posts, setPosts] = useState([]);
+
+  //useEffect helps us to fire a piece of code when the feed component loads and r but if we pass a blank dependency it only renders once
+
+  useEffect(() => {
+    //connect to the db
+    db.collection("posts")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setPosts(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        )
+      );
+  }, []);
 
   const sendPost = (e) => {
     e.preventDefault();
+    //here we want to push a different post to the database
+    db.collection("posts").add({
+      name: "Joel Angel",
+      description: "This is a test",
+      message: input,
+      photoUrl: "",
+      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+    });
+
+    setInput("");
   };
   return (
     <div className="feed">
@@ -21,7 +50,12 @@ function Feed() {
         <div className="feed__input">
           <CreateIcon />
           <form>
-            <input type="text" placeholder="Start a post" />
+            <input
+              value={input}
+              type="text"
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Start a post"
+            />
             <button onClick={sendPost} type="submit">
               Send
             </button>
@@ -40,14 +74,15 @@ function Feed() {
       </div>
       {/* Building the Post Section */}
 
-      {posts.map((post) => (
-        <Post />
+      {posts.map(({ id, data: { name, description, message, photoUrl } }) => (
+        <Post
+          key={id}
+          name={name}
+          description={description}
+          message={message}
+          photoUrl={photoUrl}
+        />
       ))}
-      <Post
-        name="Joel Angel"
-        description="Testing Testing"
-        message="apex legends is a game"
-      />
     </div>
   );
 }
