@@ -6,6 +6,7 @@ import ImageIcon from "@material-ui/icons/Image";
 import CalendarViewDayIcon from "@material-ui/icons/CalendarViewDay";
 import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import DateRangeIcon from "@material-ui/icons/DateRange";
+import Post from "./Post";
 
 function Feed() {
   return (
@@ -30,6 +31,11 @@ function Feed() {
         </div>
       </div>
       {/* Building the Post Section */}
+      <Post
+        name="Joel Angel"
+        description="Testing Testing"
+        message="apex legends is a game"
+      />
     </div>
   );
 }
