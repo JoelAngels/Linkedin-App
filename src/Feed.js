@@ -9,8 +9,11 @@ import DateRangeIcon from "@material-ui/icons/DateRange";
 import Post from "./Post";
 import { db } from "./firebase";
 import firebase from "firebase";
+import { selectUser } from "./features/userSlice";
+import { useSelector } from "react-redux";
 
 function Feed() {
+  const user = useSelector(selectUser);
   //react hooks
   const [input, setInput] = useState("");
   const [posts, setPosts] = useState([]);
@@ -35,10 +38,10 @@ function Feed() {
     e.preventDefault();
     //here we want to push a different post to the database
     db.collection("posts").add({
-      name: "Joel Angel",
-      description: "This is a test",
+      name: user.displayName,
+      description: user.email,
       message: input,
-      photoUrl: "",
+      photoUrl: user.photoUrl || "",
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
 
