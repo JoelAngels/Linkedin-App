@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { auth } from "./firebase";
 import Login from "./Login";
+import Widgets from "./Widgets";
 
 function App() {
   //pulling the user from the data store
