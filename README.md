@@ -1,68 +1,64 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# LinkedIn-Application
 
-## Available Scripts
+Live Demo - [LinkedIn App](https://linkedin-app-ja.web.app/)
 
-In the project directory, you can run:
+### Table of Contents
 
-### `npm start`
+Here are sections headers that will be used to reference location of destinations.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [References](#references)
+- [Author Info](#author-info)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## Description
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Built this LinkedIn Application
 
-### `npm run build`
+#### Technologies
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ⚛ ReactJS / REDUX / React-Router / Hooks /
+- 🖥 HTML / CSS
+- 🎨 Material UI /
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+[Back To The Top](#LinkedIn-Application)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## How To Use
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Make sure Npm and Node is installed in your computer.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Run `npm install` to install the dependencies
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Run `npm start` to start the LinkedIn Project
 
-## Learn More
+- When the App is loaded, you will need to create a new account,
+- 1 Register A New Account, write down the details which is FULL NAME, EMAIL and PASSWORD AND then click the REGISTER Now button , **DO NOT CLICK ON THE SIGN UP BUTTON TILL YOU CREATE AN ACCOUNT**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 2 When Registered, It will automatically let the User have access to the application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 3 The User will now have full access and can go ahead and POST your own post. Enjoy 🥂
 
-### Code Splitting
+[Back To The Top](#LinkedIn-Application)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+---
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Copyright (©) [2021] [JoelAngel]
 
-### Making a Progressive Web App
+[Back To The Top](#LinkedIn-Application)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+---
 
-### Advanced Configuration
+## Author Info
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+- LinkedIn - [linkedIn](https://www.linkedin.com/in/joel-angel-4b05141a3/)
+- Website - [JoelAngel](https://joelangel.web.app)
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Back To The Top](#LinkedIn-Application)
