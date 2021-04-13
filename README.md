@@ -1,6 +1,6 @@
 # LinkedIn-Application
 
-Live Demo - [LinkedIn App](https://linkedin-app-ja.web.app/)
+**Live Application** - [LinkedIn App](https://linkedin-app-ja.web.app/)
 
 ### Table of Contents
 
@@ -15,7 +15,7 @@ Here are sections headers that will be used to reference location of destination
 
 ## Description
 
-Built this LinkedIn Application
+Built this LinkedIn Application that lets the User have a transition Effect when Posting a Post and has a Google Authentication Service Endpoint when Signing In and Out
 
 #### Technologies
 
@@ -42,7 +42,9 @@ Built this LinkedIn Application
 
 - 2 When Registered, It will automatically let the User have access to the application
 
-- 3 The User will now have full access and can go ahead and POST your own post. Enjoy 🥂
+- 3 The User will now have full access and can go ahead and POST your own post.
+
+- 4 When logging Out, just click on the Avatar Icon at the top Right that has your Name Initial, and with this process you will be able to Sign In just by **typing your username, password and pressing the Signing In Button** Happy Coding 🥂
 
 [Back To The Top](#LinkedIn-Application)
 
